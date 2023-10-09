@@ -38,8 +38,12 @@ cargo run agent start serial <port number>
 cargo run client set <workspace name>
 ```
 ### Create Client
+
 Create client from *.idl file
-For example, ./my_ws/Micro-XRCE-DDS-Client/examples/Test/Test.idl
+
+For example, 
+
+./my_ws/Micro-XRCE-DDS-Client/examples/Test/Test.idl
 ```
 cargo run client create <*.idl file>
 ```
