@@ -16,7 +16,8 @@ pub fn call_command()
     {
         if "set" == action_arg
         {
-            set_client();
+            let ws_arg = std::env::args().nth(3).unwrap();
+            set_client(ws_arg);
         }
         else if "start" == action_arg
         {
@@ -40,8 +41,33 @@ pub fn call_command()
     }
 }
 
-fn set_client()
+fn set_client(ws_name:String)
 {
+    {
+        let mut child = Command::new("cd")
+            .arg(ws_name)
+            .stdout(Stdio::piped())
+            .stderr(Stdio::piped())
+            .spawn()
+            .expect("Failed to move workspace");
+
+        if let Some(ref mut stdout) = child.stdout
+        {
+            let reader = BufReader::new(stdout);
+
+            for line in reader.lines()
+            {
+                println!("{}", line.unwrap());
+            }
+        }
+
+        let status = child.wait().expect("Failed to wait");
+        if !status.success()
+        {
+            eprintln!("Command Error")
+        }
+    }
+
     {
         let mut child = Command::new("git")
             .arg("clone")
