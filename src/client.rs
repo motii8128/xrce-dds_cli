@@ -64,7 +64,7 @@ fn set_client(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -90,7 +90,7 @@ fn set_client(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -115,7 +115,7 @@ fn set_client(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -143,7 +143,7 @@ fn set_client(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -169,7 +169,7 @@ fn set_client(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -193,7 +193,7 @@ fn set_client(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 }
@@ -221,7 +221,7 @@ fn start_demo_publisher(port:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
 }
 
@@ -248,7 +248,7 @@ fn start_demo_subscriber(port:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
 }
 
@@ -275,6 +275,6 @@ fn create_client(file_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
 }

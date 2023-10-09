@@ -60,7 +60,7 @@ fn set_agent(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -86,7 +86,7 @@ fn set_agent(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -111,7 +111,7 @@ fn set_agent(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -139,7 +139,7 @@ fn set_agent(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     } 
 
@@ -164,7 +164,7 @@ fn set_agent(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -188,7 +188,7 @@ fn set_agent(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -214,7 +214,7 @@ fn set_agent(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 }
@@ -243,7 +243,7 @@ fn start_udp_agent(port:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
 }
 
@@ -275,6 +275,6 @@ fn start_serial_agent(port:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
 }

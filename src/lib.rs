@@ -50,7 +50,7 @@ fn set_lib()
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 }

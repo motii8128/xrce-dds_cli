@@ -45,7 +45,7 @@ fn set_gen(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -71,7 +71,7 @@ fn set_gen(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -96,7 +96,7 @@ fn set_gen(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -122,7 +122,7 @@ fn set_gen(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -148,7 +148,7 @@ fn set_gen(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 
@@ -173,7 +173,7 @@ fn set_gen(ws_name:String)
         let status = child.wait().expect("Failed to wait");
         if !status.success()
         {
-            eprintln!("Command Error")
+            eprintln!("Command Error");
         }
     }
 }
